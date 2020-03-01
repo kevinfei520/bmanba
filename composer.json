@@ -1,0 +1,15 @@
+{
+    "require": {
+        "psr/container": "^1.0",
+        "noahbuscher/macaw": "dev-master",
+        "illuminate/database": "*",
+        "twig/twig": "^3.0.3",
+        "lmonkey/cattree": "^1.0"
+    },
+    "autoload": {
+        "classmap": [
+            "app/controllers",
+            "app/models"
+        ]
+    }
+}

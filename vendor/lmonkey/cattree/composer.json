@@ -1,0 +1,35 @@
+{
+    "name": "lmonkey/cattree",
+    "description":  "My template of composer project!",
+    "keywords": ["lmonkey"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "JingFei Ding",
+            "email": "794783766@qq.com",
+            "homepage": "https://blog.kevinfei.com/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "1.0.*",
+        "php": ">=7.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "@stable"
+    },
+    "autoload": {
+        "classmap": [
+           
+        ],
+        "psr-4": {
+            "lmonkey\\cattree\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "lmonkey\\cattree\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable"
+}

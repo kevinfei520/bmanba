@@ -1,0 +1,6 @@
+
+autoindex off;
+
+location / {
+	 try_files $uri $uri/ /index.php?/$uri;
+}
