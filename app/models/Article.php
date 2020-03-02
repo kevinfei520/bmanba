@@ -41,7 +41,6 @@ class Article extends Model
      */
     protected $fillable = ['cid','title','author','is_top','is_hot','status','keywords','description','fabulous','created_at','updated_at'];
 
-    
     /** 
      * 
      */
@@ -49,5 +48,12 @@ class Article extends Model
          return  Article::select('*')->where('fabulous', 8)->first();
     }
 
+    /** 
+     * 
+     */
+    public static function findWhereAll()
+    {
+        return Article::select('*')->where('status',1)->get();
+    }
 
 }   

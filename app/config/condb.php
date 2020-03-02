@@ -6,7 +6,7 @@ return array(
 
         'host'      => 'localhost',
     
-        'database'  => 'blackmamba',
+        'database'  => 'bmamba',
     
         'username'  => 'root',
     
