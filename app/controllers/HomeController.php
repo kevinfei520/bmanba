@@ -30,6 +30,9 @@ class HomeController extends BaseController
 		var_dump($result);die;
 	}
 
-	
+	public function details($id)
+	{	
+		echo $id;
+	}
     
 }

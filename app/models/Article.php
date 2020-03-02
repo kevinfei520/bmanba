@@ -39,7 +39,7 @@ class Article extends Model
      *
      * @var array
      */
-    protected $fillable = ['cid','title','author','is_top','is_hot','status','keywords','description','fabulous','created_at','updated_at'];
+    protected $fillable = ['cid','title','author','is_top','is_hot','keywords','description','fabulous','status','created_at','updated_at'];
 
     /** 
      * 

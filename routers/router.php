@@ -16,6 +16,7 @@ use NoahBuscher\Macaw\Macaw;
 
 Macaw::get('/', 'HomeController@home');
 Macaw::get('admin/list', 'HomeController@list');
+Macaw::get('article/(:num)', 'HomeController@details');
 
 
 
