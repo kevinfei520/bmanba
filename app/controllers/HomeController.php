@@ -10,14 +10,14 @@ class HomeController extends BaseController
 	public function home(){
 
 		$result = Article::updateOrCreate(
-			['title' => 'redis的有序集合介绍3', 'author' => '成长的小白菜'], 
+			['title' => 'redis的有序集合介绍', 'author' => '成长的小白菜'], 
 			['fabulous' => 59, 'is_top' => 69,  'is_hot' => 111]
 		);
 		
 		$loader = new \Twig\Loader\FilesystemLoader('../app/views/');
 
 		$twig = new \Twig\Environment($loader, [
-			//  'cache' => '../storage/framework/views',
+			 'cache' => '../storage/framework/views',
 		]);
 
 		echo $twig->render('index.html', ['navigation' => Article::all()]);
