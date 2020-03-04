@@ -19,7 +19,7 @@ class HomeController extends BaseController
 	public function list()
 	{
 		$result = Article::findAll();
-		return views('article/index.html',$result);
+		return views('index.html',$result);
 	}
 
 	public function details($id)

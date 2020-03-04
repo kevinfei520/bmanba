@@ -18,14 +18,18 @@ Macaw::get('/', 'HomeController@home');
 
 
 Macaw::get('admin/list', 'HomeController@list');
+Macaw::get('admin/(:num)', 'HomeController@details');
+
+
+
 Macaw::get('article/(:num)', 'HomeController@details');
 
 Macaw::get('/(:any)', function($slug) {
-     echo 'The slug is: ' . $slug;
+      echo 'The slug is: ' . $slug;
 });
 
 Macaw::post('/', function() {
-     echo "I'm a POST request!";
+      echo "I'm a POST request!";
 });
   
 // Macaw::any('/', function() {
