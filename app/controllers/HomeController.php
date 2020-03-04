@@ -17,7 +17,7 @@ class HomeController extends BaseController
 		$loader = new \Twig\Loader\FilesystemLoader('../app/views/');
 
 		$twig = new \Twig\Environment($loader, [
-			 'cache' => '../storage/framework/views',
+			//  'cache' => '../storage/framework/views',
 		]);
 
 		echo $twig->render('index.html', ['navigation' => Article::all()]);

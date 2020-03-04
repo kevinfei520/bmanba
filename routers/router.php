@@ -26,9 +26,9 @@ Macaw::post('/', function() {
      echo "I'm a POST request!";
 });
   
-Macaw::any('/', function() {
-     echo "I can be both a GET and a POST request!";
-});
+// Macaw::any('/', function() {
+//      // echo "I can be both a GET and a POST request!";
+// });
 
 Macaw::error(function() {
      echo '404 :: Not Found';
