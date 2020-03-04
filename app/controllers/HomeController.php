@@ -26,13 +26,14 @@ class HomeController extends BaseController
 	
 	public function list()
 	{
-		$result = Article::findWhereAll();
+		$result = Article::findAll();
 		var_dump($result);die;
 	}
 
 	public function details($id)
 	{	
-		echo $id;
+		$result = Article::findWhereAll($id);
+		var_dump($result);die;
 	}
     
 }

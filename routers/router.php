@@ -15,6 +15,8 @@
 use NoahBuscher\Macaw\Macaw;
 
 Macaw::get('/', 'HomeController@home');
+
+
 Macaw::get('admin/list', 'HomeController@list');
 Macaw::get('article/(:num)', 'HomeController@details');
 
@@ -27,7 +29,7 @@ Macaw::post('/', function() {
 });
   
 // Macaw::any('/', function() {
-//      // echo "I can be both a GET and a POST request!";
+//      echo "I can be both a GET and a POST request!";
 // });
 
 Macaw::error(function() {

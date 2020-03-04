@@ -45,15 +45,15 @@ class Article extends Model
      * 
      */
     public static function findAll() {
-         return  Article::select('*')->where('fabulous', 8)->first();
+         return  Article::all();
     }
 
     /** 
      * 
      */
-    public static function findWhereAll()
+    public static function findWhereAll($id)
     {
-        return Article::select('*')->where('status',1)->get();
+        return Article::select('*')->where('id',$id)->get();
     }
 
 }   
