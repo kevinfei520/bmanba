@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./favicon.ico">
+    <title>welcome black mamba framework!</title>
+</head>
+
+<body>
+    <h2>welcome black mamba framework !</h2>
+
+    <div style="background-color: antiquewhite;">
+        <ul>
+            {% for item in navigation %}
+            <li><a href="article/{{ item.id }}" target="_blank">{{ item.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+
+</body>
+
+</html>
