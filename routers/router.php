@@ -14,15 +14,13 @@
 
 use NoahBuscher\Macaw\Macaw;
 
-Macaw::get('/', 'HomeController@home');
+Macaw::get('/', 'App\Controllers\HomeController@home');
+Macaw::get('article/(:num)', 'App\Controllers\HomeController@details');
 
 
-Macaw::get('admin/list', 'HomeController@list');
-Macaw::get('admin/(:num)', 'HomeController@details');
+Macaw::get('admin/list', 'App\Controllers\HomeController@list');
+Macaw::get('admin/(:num)', 'App\Controllers\HomeController@details');
 
-
-
-Macaw::get('article/(:num)', 'HomeController@details');
 
 Macaw::get('/(:any)', function($slug) {
       echo 'The slug is: ' . $slug;
@@ -41,8 +39,3 @@ Macaw::error(function() {
 });
 
 Macaw::dispatch();
-
-
-// Macaw::get('/', 'app\controllers\demo@index');
-// Macaw::get('page', 'app\controllers\demo@page');
-// Macaw::get('view/(:num)', 'Controllers\demo@view');

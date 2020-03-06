@@ -3,10 +3,10 @@
 * BaseController
 */
 
+namespace App\Controllers;
 
-class BaseController
+class BaseController 
 {
-	
 	function __construct()
 	{	
 		echo 'base<br>';
