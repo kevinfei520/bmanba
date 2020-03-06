@@ -53,7 +53,7 @@ class Article extends Model
      */
     public static function findWhereAll($id)
     {
-        return Article::select('*')->where('id',$id)->get();
+         return Article::select('*')->where('id',$id)->get();
     }
 
 }   
