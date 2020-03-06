@@ -19,7 +19,7 @@
  */
 if(!function_exists('views'))
 {
-    function views($path,$result)
+    function views($path,$result='')
     {   
         $loader = new \Twig\Loader\FilesystemLoader('../app/views/');
 

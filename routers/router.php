@@ -14,28 +14,23 @@
 
 use NoahBuscher\Macaw\Macaw;
 
+//主页 
 Macaw::get('/', 'App\Controllers\HomeController@home');
-Macaw::get('article/(:num)', 'App\Controllers\HomeController@details');
+
+//文章
+Macaw::get('article/list', 'App\Controllers\ArticleController@list');
+Macaw::get('article/(:num)', 'App\Controllers\ArticleController@details');
 
 
-Macaw::get('admin/list', 'App\Controllers\HomeController@list');
-Macaw::get('admin/(:num)', 'App\Controllers\HomeController@details');
+//请求方式
+// Macaw::get('/(:any)', function($slug) {   echo 'The slug is: ' . $slug; });
+// Macaw::post('/', function() {  echo "I'm a POST request!";  });
+// Macaw::any('/', function() {  echo "I can be both a GET and a POST request!";   });
 
-
-Macaw::get('/(:any)', function($slug) {
-      echo 'The slug is: ' . $slug;
-});
-
-Macaw::post('/', function() {
-      echo "I'm a POST request!";
-});
-  
-// Macaw::any('/', function() {
-//      echo "I can be both a GET and a POST request!";
-// });
-
-Macaw::error(function() {
-     echo '404 :: Not Found';
+// //请求错误
+Macaw::error(function() { 
+      $basecontroller = new App\Controllers\BaseController();
+      echo $basecontroller::errorReporting();
 });
 
 Macaw::dispatch();

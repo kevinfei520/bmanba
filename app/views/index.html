@@ -4,17 +4,77 @@
     <meta charset="UTF-8">
     <link rel="icon" href="./favicon.ico">
     <title>welcome black mamba framework!</title>
+    <link rel="stylesheet" href="/resource/lib/layui-v2.5.4/css/layui.css" media="all">
+    <link rel="stylesheet" href="/resource/lib/font-awesome-4.7.0/css/font-awesome.min.css" media="all">
+    <style>
+        .bmTitle {
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
 </head>
 
-<body>
-    <h2>welcome black mamba framework!</h2>
+<body class="layui-layout-body">
 
-    <div style="background-color: antiquewhite;">
-        <ul>
-            {% for item in navigation %}
-            <li><a href="{{ item.id }}" target="_blank">{{ item.title }}</a></li>
-            {% endfor %}
-        </ul>
+    <h1 class="bmTitle">welcome black mamba framework!</h1>
+
+    <div class="layui-card" style="width: 50%;margin: 0 auto;">
+        <div class="layui-card-header"><i class="fa fa-fire icon"></i>版本信息</div>
+        <div class="layui-card-body layui-text">
+            <table class="layui-table">
+                <colgroup>
+                    <col width="100">
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <td>框架名称</td>
+                        <td> Black Mamba （ 黑曼巴 ）</td>
+                    </tr>
+                    <tr>
+                        <td>当前版本</td>
+                        <td>V 1.0.0</td>
+                    </tr>
+                    <tr>
+                        <td>主要特色</td>
+                        <td>快速搭建 / 高效 / 简洁 / 小巧</td>
+                    </tr>
+                    <tr>
+                        <td>演示地址</td>
+                        <td>
+                            iframe版：<a href="/" target="_blank">点击查看</a><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>下载地址</td>
+                        <td>
+                            iframe版：<a href="https://github.com/Kevin5211314/bmanba" target="_blank">github</a> /
+                            <a href="https://gitee.com/waiwen/bmamba" target="_blank">gitee</a><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gitee</td>
+                        <td style="padding-bottom: 0;">
+                            <div class="layui-btn-container">
+                                <a href="https://gitee.com/waiwen/bmanba" target="_blank" style="margin-right: 15px">
+                                    <img src="https://gitee.com/waiwen/bmanba/badge/star.svg?theme=dark" alt="star"></a>
+                                <a href="https://gitee.com/waiwen/bmanba" target="_blank">
+                                    <img src="https://gitee.com/waiwen/bmanba/badge/fork.svg?theme=dark" alt="fork"></a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Github</td>
+                        <td style="padding-bottom: 0;">
+                            <div class="layui-btn-container">
+                                <iframe src="https://ghbtns.com/github-btn.html?user=kevin5211314&repo=bmanba&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+                                <iframe src="https://ghbtns.com/github-btn.html?user=kevin5211314&repo=bmanba&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
 </body>
