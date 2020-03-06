@@ -8,11 +8,17 @@ class ComposerStaticInit28766de374364013e1b5f0195f5729b5
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '0d59ee240a4cd96ddbb4ff164fccea4d' => __DIR__ . '/..' . '/symfony/polyfill-php73/bootstrap.php',
         '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        'v' => 
+        array (
+            'voku\\tests\\' => 11,
+            'voku\\' => 5,
+        ),
         'l' => 
         array (
             'lmonkey\\cattree\\' => 16,
@@ -23,10 +29,13 @@ class ComposerStaticInit28766de374364013e1b5f0195f5729b5
         ),
         'S' => 
         array (
+            'Symfony\\Polyfill\\Php73\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Ctype\\' => 23,
             'Symfony\\Contracts\\Translation\\' => 30,
+            'Symfony\\Contracts\\Service\\' => 26,
             'Symfony\\Component\\Translation\\' => 30,
+            'Symfony\\Component\\Console\\' => 26,
         ),
         'P' => 
         array (
@@ -59,6 +68,14 @@ class ComposerStaticInit28766de374364013e1b5f0195f5729b5
     );
 
     public static $prefixDirsPsr4 = array (
+        'voku\\tests\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/voku/portable-ascii/tests',
+        ),
+        'voku\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/voku/portable-ascii/src/voku',
+        ),
         'lmonkey\\cattree\\' => 
         array (
             0 => __DIR__ . '/..' . '/lmonkey/cattree/src',
@@ -66,6 +83,10 @@ class ComposerStaticInit28766de374364013e1b5f0195f5729b5
         'Twig\\' => 
         array (
             0 => __DIR__ . '/..' . '/twig/twig/src',
+        ),
+        'Symfony\\Polyfill\\Php73\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-php73',
         ),
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
@@ -79,9 +100,17 @@ class ComposerStaticInit28766de374364013e1b5f0195f5729b5
         array (
             0 => __DIR__ . '/..' . '/symfony/translation-contracts',
         ),
+        'Symfony\\Contracts\\Service\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/service-contracts',
+        ),
         'Symfony\\Component\\Translation\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/translation',
+        ),
+        'Symfony\\Component\\Console\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/console',
         ),
         'Psr\\SimpleCache\\' => 
         array (
@@ -136,9 +165,11 @@ class ComposerStaticInit28766de374364013e1b5f0195f5729b5
     );
 
     public static $classMap = array (
+        'App\\Controllers\\ArticleController' => __DIR__ . '/../..' . '/app/controllers/ArticleController.php',
+        'App\\Controllers\\BaseController' => __DIR__ . '/../..' . '/app/controllers/BaseController.php',
+        'App\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/controllers/HomeController.php',
         'App\\Models\\Article' => __DIR__ . '/../..' . '/app/models/Article.php',
-        'BaseController' => __DIR__ . '/../..' . '/app/controllers/BaseController.php',
-        'HomeController' => __DIR__ . '/../..' . '/app/controllers/HomeController.php',
+        'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

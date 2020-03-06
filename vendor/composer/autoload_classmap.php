@@ -6,7 +6,9 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Controllers\\ArticleController' => $baseDir . '/app/controllers/ArticleController.php',
+    'App\\Controllers\\BaseController' => $baseDir . '/app/controllers/BaseController.php',
+    'App\\Controllers\\HomeController' => $baseDir . '/app/controllers/HomeController.php',
     'App\\Models\\Article' => $baseDir . '/app/models/Article.php',
-    'BaseController' => $baseDir . '/app/controllers/BaseController.php',
-    'HomeController' => $baseDir . '/app/controllers/HomeController.php',
+    'JsonException' => $vendorDir . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
 );
