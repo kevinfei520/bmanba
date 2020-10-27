@@ -3,10 +3,10 @@
 * ArticleController   文章控制器
 */
 
-namespace App\Controllers;
+namespace App\Admin\Controllers;
 
-use App\Models\Article;
-use App\Controllers\BaseController;
+use App\Admin\Models\Article;
+use App\Common\Controllers\BaseController;
 
 class ArticleController extends BaseController
 {	
