@@ -3,7 +3,7 @@
 * BaseController   基础控制器
 */
 
-namespace App\Controllers;
+namespace App\Admin\Controllers;
 
 class BaseController 
 {

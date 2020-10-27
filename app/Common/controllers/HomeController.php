@@ -3,9 +3,9 @@
 * HomeController   主页控制器
 */
 
-namespace App\Controllers;
+namespace App\Common\Controllers;
 
-use App\Controllers\BaseController;
+use App\Common\Controllers\BaseController;
 
 class HomeController extends BaseController
 {	

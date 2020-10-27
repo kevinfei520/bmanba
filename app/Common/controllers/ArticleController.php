@@ -3,9 +3,9 @@
 * ArticleController   文章控制器
 */
 
-namespace App\Admin\Controllers;
+namespace App\Common\Controllers;
 
-use App\Admin\Models\Article;
+use App\Common\Models\Article;
 use App\Common\Controllers\BaseController;
 
 class ArticleController extends BaseController
